@@ -1,0 +1,80 @@
+set Experiment   selfPacedReading
+
+### (pseudo)random order for items?
+set RandomOrder  0
+
+# The number of items between breaks (0 for no breaks):
+set BreakInterval 0
+
+### Determines how low the mask (-) should be on the line.
+### It was 1/2 for English, 0 would put it at the top,
+### 1 puts it at the bottom of the line:
+set MaskHeight 1
+
+
+# The amount the window is larger than the screen on either side:
+set PadX         10
+# The amount the window is larger than the screen on top and bottom:
+set PadY         20
+# A scale factor for the line spacing (2 for double spaced);
+# increase interline spacing, if multiple lines:
+set LineSpacing  2
+# The space between the left side of the screen and the sentences:
+set RightShift   60
+# The amount the sentences are shifted up from the middle of the screen:
+set UpShift      20
+ 
+### The font used for the sentences:
+set TextFont     "-family {MS Mincho} -size -24 -weight bold"
+### sans serif: set TextFont     "-family {gothic} -size -20 -weight bold"
+# The font used for commands and other messages:
+set BigFont      "-family {MS Gothic} -size 24 -weight bold"
+# The font used for the PressKey message:
+set ContinueFont "-family {MS Gothic} -size 20 -weight bold"
+# The font used for the entry boxes (like fill-in-the-blank):
+set EntryFont    "-family {MS Gothic} -size 12 -weight bold"
+
+# The maximum number of characters per line:
+# It's 60% of what it used to be for English.
+set MaxChars     66
+
+# The key to see the next word:
+set GoKey        space
+# The key to respond yes:
+set YesKey       f
+# The key to respond no:
+set NoKey        j
+# Set multiple choice keys:
+set MultiKeys    {{(A) a} {(B) f} {(C) j} {(D) ;}}
+
+# Determines the horizontal spacing between multiple choice columns:
+set MultiChoiceHGap 100
+# Determines the vertical spacing between multiple choice rows:
+set MultiChoiceVGap 50
+# Whether the options are shuffled for multiple choice questions:
+set MultiChoiceRandChoices 0
+
+# The reward message, leave blank for no feedback:
+set RightAnswer  ""
+# The error message, leave blank for no feedback:
+set WrongAnswer  "＊＊＊＊＊ 質問の答が違います！　お気をつけください。 ＊＊＊＊"
+# The time the feedback message stays on the screen:  # 停止時間
+set FeedbackDelay 1000
+
+# Whether to request a rating in standard experiments:
+set CollectRatings 0
+# The maximum value of the rating scale:
+set RatingChoices 7
+# The message presented along with ratings:
+set RatingMessage "この文は読みやすかったですか。"
+# The label at the low end of the rating scale:
+set RatingEasy "とても簡単"
+# The label at the high end of the rating scale:
+set RatingHard "とても難しい"
+
+# The press any key message:
+set PressKey     "「スペース」キーを押して、次に進んでください。"
+# The question key explanation:
+set QuestionKeys "○は\"[string toupper $YesKey]\"    ×は\"[string toupper $NoKey]\""
+
+

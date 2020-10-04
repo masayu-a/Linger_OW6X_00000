@@ -1,0 +1,21 @@
+
+set MaskJoins  1
+set MaskSpaces 1
+
+# set Experiment stopMakingSenseReading
+# set StopMakingSenseAbortOnNo 0
+
+
+
+############################ Japanese specific stuff starts here:
+
+###  set LangEncoding shiftjis
+set LangEncoding utf-8
+
+###  file with Japanese stuff, including stuff written in Japanese:
+set PrefJp "preferencesJP"
+
+# Load the preferences file with Jp messages:
+if [file readable $PrefJp] {encSource $PrefJp}
+
+
